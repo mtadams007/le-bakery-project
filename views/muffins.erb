@@ -1,43 +1,43 @@
 <div class="row">
-  <div class="card large col s12 m4 l3">
+  <div class="card large col s12 m4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator shrinkMe" src="/images/choco_muffin.jpeg">
+      <img class="activator" src=<%=$cupcake.pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <span class="card-title activator grey-text text-darken-4"><%= $cupcake.name%><i class="material-icons right">more_vert</i></span>
+      <p><%=$cupcake.price%></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4"><%=$cupcake.name%><i class="material-icons right">close</i></span>
+      <p><%=$cupcake.description%></p>
     </div>
   </div>
 
-  <div class="card large col s12 m4 l3">
+  <div class="card large col s12 m4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="/images/choco_muffin.jpeg">
+      <img class="activator" src=<%=$chocolate_muffin.pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <span class="card-title activator grey-text text-darken-4"><%=$chocolate_muffin.name%><i class="material-icons right">more_vert</i></span>
+      <p><%=$chocolate_muffin.price%></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4"><%=$chocolate_muffin.name%><i class="material-icons right">close</i></span>
+      <p><%=$chocolate_muffin.description%></p>
     </div>
   </div>
 
-  <div class="card large col s12 m4 l3">
+  <div class="card large col s12 m4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator shrinkMe" src="/images/choco_muffin.jpeg">
+      <img class="activator shrinkMe" src=<%=$blueberry.pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
+      <span class="card-title activator grey-text text-darken-4"><%=$blueberry.name%><i class="material-icons right">more_vert</i></span>
+      <p><%=$blueberry.price%></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4"><%=$blueberry.name%><i class="material-icons right">close</i></span>
+      <p><%=$blueberry.description%></p>
     </div>
   </div>
 </div>

@@ -6,9 +6,10 @@ class Pastry
 end
 
 class Muffin < Pastry
-  attr_reader :description, :price, :pic
-  def initialize(description, price, pic)
+  attr_reader :name, :description, :price, :pic
+  def initialize(name, description, price, pic)
     super("muffin")
+    @name = name
     @description = description
     @price = price
     @pic = pic
@@ -27,9 +28,10 @@ class Cake < Pastry
 end
 
 class Cookie < Pastry
-  attr_reader :description, :price, :pic
-  def initialize(description, price, pic)
+  attr_reader :name, :description, :price, :pic
+  def initialize(name, description, price, pic)
     super("cookie")
+    @name = name
     @description = description
     @price = price
     @pic = pic
