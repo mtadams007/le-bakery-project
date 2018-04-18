@@ -1,7 +1,27 @@
+#logo-font {
+  font-family: 'Homemade Apple', cursive;
+  color: #20A39E;
+}
+
+a {
+  color: #20A39E;
+}
+h2 {
+  color: #20A39E;
+}
+body {
+  font-family: 'Gloria Hallelujah';
+}
+
+.card-pic {
+  height: 250px;
+  width: auto;
+}
 #sign-greeting {
   position: absolute;
   margin-top: 190px;
   margin-left: 610px;
+  font-family: "Love Ya Like A Sister";
 }
 
 .brand-logo {
