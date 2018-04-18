@@ -25,6 +25,11 @@ $cookie_1 = Cookie.new("Chocolate Chip Cookie", "Everyone will want to chip in t
 $cookie_2 = Cookie.new("Christmas Cookies", "Yule love these cookies! Celebrate Christmas any time of the year! Made with all natural ingredients from Norway.", "$1.37", "/images/christmas_cookies.jpeg")
 
 $cookie_3 = Cookie.new("Green Cookie", "A super healthy cookie that is also good for the environment. Your friends will turn green from envy! Made with kale, spinach, and iceberg lettuce", "$0.23", "/images/green_cookie.jpeg")
+
+get '/catalog' do
+  erb :catalog, :layout => :catalog_layout
+end
+
 get '/feedback' do
   erb :feedback
 end
