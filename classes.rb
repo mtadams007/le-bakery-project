@@ -40,11 +40,11 @@ end
 
 #Cakes
 
-$carrot = Cake.new("Carrot Cake", "A tasty cake made with organic carrots imported from Mbabane, Swaziland!", '$450', "/images/carrot_cake.jpeg")
+$carrot = Cake.new("Carrot Cake", "A tasty cake made with organic carrots imported from Mbabane, Swaziland is better than gold!", '$450', "/images/carrot_cake.jpeg")
 
-$vanilla = Cake.new("Vanilla Cake", "A delicious cake made with imported vanilla from Ranomafana, Madagascar!", '$500', "/images/vanilla_cake.jpeg")
+$vanilla = Cake.new("Vanilla Cake", "A delicious cake made with imported vanilla from Ranomafana, Madagascar will make you the best you've ever bean!", '$500', "/images/vanilla_cake.jpeg")
 
-$strawberry = Cake.new("Strawberry Cake", "A scrumptious cake made with strawberries from Mongolia!", '$400', "/images/strawberry_cake.jpeg")
+$strawberry = Cake.new("Strawberry Cake", "You'll never draw the shortest straw with this scrumptious cake made with strawberries from Mongolia!", '$400', "/images/strawberry_cake.jpeg")
 
 #Muffins
 

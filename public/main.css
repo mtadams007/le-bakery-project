@@ -1,3 +1,9 @@
+#sign-greeting {
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 610px;
+}
+
 .brand-logo {
   height:95px;
   width:95px
