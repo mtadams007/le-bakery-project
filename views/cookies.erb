@@ -1,43 +1,17 @@
 <div class="row">
+  <%$cookie_hash.each do |key, value| %>
   <div class="card large col s12 m4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator shrinkMe" src=<%=$cookie_1.pic%>>
+      <img class="activator" src=<%=$cookie_hash[key].pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$cookie_1.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$cookie_1.price%></p>
+      <span class="card-title activator grey-text text-darken-4"><%=$cookie_hash[key].name%><i class="material-icons right">more_vert</i></span>
+      <p><%=$cookie_hash[key].price%></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$cookie_1.name%><i class="material-icons right">close</i></span>
-      <p><%=$cookie_1.description%></p>
+      <span class="card-title grey-text text-darken-4"><%=$cookie_hash[key].name%><i class="material-icons right">close</i></span>
+      <p><%=$cookie_hash[key].description%></p>
     </div>
   </div>
-
-  <div class="card large col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$cookie_2.pic%>>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$cookie_2.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$cookie_2.price%></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$cookie_2.name%><i class="material-icons right">close</i></span>
-      <p><%=$cookie_2.description%></p>
-    </div>
-  </div>
-
-  <div class="card large col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator shrinkMe" src=<%=$cookie_3.pic%>>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$cookie_3.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$cookie_3.price%></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$cookie_3.name%><i class="material-icons right">close</i></span>
-      <p><%=$cookie_3.description%></p>
-    </div>
-  </div>
+  <% end %>
 </div>

@@ -1,43 +1,17 @@
 <div class="row">
+  <%$muffin_hash.each do |key, value| %>
   <div class="card large col s12 m4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$cupcake.pic%>>
+      <img class="activator" src=<%=$muffin_hash[key].pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%= $cupcake.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$cupcake.price%></p>
+      <span class="card-title activator grey-text text-darken-4"><%=$muffin_hash[key].name%><i class="material-icons right">more_vert</i></span>
+      <p><%=$muffin_hash[key].price%></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$cupcake.name%><i class="material-icons right">close</i></span>
-      <p><%=$cupcake.description%></p>
+      <span class="card-title grey-text text-darken-4"><%=$muffin_hash[key].name%><i class="material-icons right">close</i></span>
+      <p><%=$muffin_hash[key].description%></p>
     </div>
   </div>
-
-  <div class="card large col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$chocolate_muffin.pic%>>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$chocolate_muffin.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$chocolate_muffin.price%></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$chocolate_muffin.name%><i class="material-icons right">close</i></span>
-      <p><%=$chocolate_muffin.description%></p>
-    </div>
-  </div>
-
-  <div class="card large col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator shrinkMe" src=<%=$blueberry.pic%>>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$blueberry.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$blueberry.price%></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$blueberry.name%><i class="material-icons right">close</i></span>
-      <p><%=$blueberry.description%></p>
-    </div>
-  </div>
+  <% end %>
 </div>

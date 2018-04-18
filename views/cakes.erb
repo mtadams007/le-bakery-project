@@ -1,45 +1,17 @@
-<!-- <div class="container center-align"> -->
 <div class="row">
+  <%$cake_hash.each do |key, value| %>
   <div class="card large col s12 m4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$carrot.pic%>>
+      <img class="activator" src=<%=$cake_hash[key].pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%= $carrot.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$carrot.price%></p>
+      <span class="card-title activator grey-text text-darken-4"><%=$cake_hash[key].name%><i class="material-icons right">more_vert</i></span>
+      <p><%=$cake_hash[key].price%></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%= $carrot.name%><i class="material-icons right">close</i></span>
-      <p><%=$carrot.description%></p>
+      <span class="card-title grey-text text-darken-4"><%=$cake_hash[key].name%><i class="material-icons right">close</i></span>
+      <p><%=$cake_hash[key].description%></p>
     </div>
   </div>
-
-  <div class="card large col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$vanilla.pic%>>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$vanilla.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$vanilla.price%></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$vanilla.name%><i class="material-icons right">close</i></span>
-      <p><%=$vanilla.description%></p>
-    </div>
-  </div>
-
-  <div class="card large col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$strawberry.pic%>>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$strawberry.name%><i class="material-icons right">more_vert</i></span>
-      <p><%=$strawberry.price%></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$strawberry.name%><i class="material-icons right">close</i></span>
-      <p><%=$strawberry.description%></p>
-    </div>
-  </div>
+  <% end %>
 </div>
-<!-- </div> -->
