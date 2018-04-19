@@ -1,3 +1,5 @@
+# pastry class is parent class
+
 class Pastry
   attr_reader :type
   def initialize(type)
@@ -5,6 +7,7 @@ class Pastry
   end
 end
 
+# subclasses of pastry class
 class Muffin < Pastry
   attr_reader :name, :description, :price, :pic
   def initialize(name, description, price, pic)

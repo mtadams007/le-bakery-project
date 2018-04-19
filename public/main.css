@@ -10,7 +10,7 @@ h2 {
   color: #20A39E;
 }
 
-
+/* This is to post the "we love whoever" greeting over the sign */
 #sign-greeting {
   position: absolute;
   margin-top: 190px;
@@ -36,6 +36,7 @@ h2 {
   text-align: center;
 }
 
+/* Most of body and main css keeps the footer at the bottom of the page */
 body {
   font-family: 'Gloria Hallelujah';
   display: flex;

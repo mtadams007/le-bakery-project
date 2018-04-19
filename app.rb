@@ -8,26 +8,11 @@ get '/feedback' do
   erb :feedback
 end
 
-get '/catalog/muffins' do
-  erb :catalog_muffins, :layout => :catalog_layout
-end
-
-get '/catalog/cookies' do
-  erb :catalog_cookies, :layout => :catalog_layout
-end
-
-get '/catalog/cakes' do
-  erb :catalog, :layout => :catalog_layout
-end
-
-get '/feedback' do
-  erb :feedback
-end
-
 get '/' do
   erb :index
 end
 
+# Creates cookies and puts them in a hash before navigating to the page
 get '/cookies' do
   @choco_chip = Cookie.new("Chocolate Chip Cookie", "Everyone will want to chip in to finish this favorite cookie! Made with goat's milk chocolate.", "$1.43", "/images/choco_chip_cookie.jpeg")
   @christmas = Cookie.new("Christmas Cookies", "Yule love these cookies! Celebrate Christmas any time of the year! Made with all natural ingredients from Norway.", "$1.37", "/images/christmas_cookies.jpeg")
@@ -40,6 +25,7 @@ get '/cookies' do
   erb :cookies
 end
 
+# Creates muffins and puts them in a hash before navigating to the page
 get '/muffins' do
   @cupcake = Muffin.new("Chocolate Cupcake", "A delicious sweet cupcake topped with chocolate icing", '$5', '/images/choco_muffin.jpeg')
   @chocolate_muffin = Muffin.new("Chocolate Muffin", "A tasty dark chocolate muffin", '$4.34','/images/chocolate_muffin.jpeg')
@@ -52,6 +38,7 @@ get '/muffins' do
   erb :muffins
 end
 
+# Creates cakes and puts them in a hash before navigating to the page
 get '/cakes' do
   @carrot = Cake.new("Carrot Cake", "A tasty cake made with organic carrots imported from Mbabane, Swaziland is better than gold!", '$450', "/images/carrot_cake.jpeg")
   @vanilla = Cake.new("Vanilla Cake", "A delicious cake made with imported vanilla from Ranomafana, Madagascar will make you the best you've ever bean!", '$500', "/images/vanilla_cake.jpeg")
@@ -64,6 +51,7 @@ get '/cakes' do
   erb :cakes
 end
 
+#Sends the catalog to the provided email
 post '/' do
   @new_email = params[:email]
   if  @new_email != ''
