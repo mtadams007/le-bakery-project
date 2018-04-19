@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width">
     <title>Le Bakery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,6 +12,7 @@
     <nav>
     <div class="nav-wrapper">
       <img src="images/logo.png" class="brand-logo center">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><a href="/">Home</a></li>
         <li>
@@ -21,18 +22,30 @@
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/">Home</a></li>
+    <li>
+    <li><a href="/muffins">Muffins</a></li>
+    <li><a href="/cookies">Cookies</a></li>
+    <li><a href="/cakes">Cakes</a></li>
+</ul>
   <h1 id="logo-font" class="center-align">Le Bakery</h1>
   <main>
+
   <%= yield %>
+  
 </main>
   <footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">
-      © 2018 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      © 2018 Le Bakery
+      <p class="grey-text text-lighten-4 right">88 Michael Street, Brooklyn, NY</p>
       </div>
     </div>
   </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+      <script src='main.js'></script>
   </body>
 </html>

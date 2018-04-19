@@ -1,16 +1,16 @@
 <div class="row">
-  <%$muffin_hash.each do |key, value| %>
-  <div class="card large col s12 m4">
+  <%@muffin_hash.each do |key, value| %>
+  <div class="card large col s12 m6 l4">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src=<%=$muffin_hash[key].pic%>>
+      <img class="activator" src=<%=@muffin_hash[key].pic%>>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><%=$muffin_hash[key].name%><i class="material-icons right">more_vert</i></span>
-      <h5><%=$muffin_hash[key].price%></h5>
+      <span class="card-title activator grey-text text-darken-4"><%=@muffin_hash[key].name%><i class="material-icons right">more_vert</i></span>
+      <h5><%=@muffin_hash[key].price%></h5>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><%=$muffin_hash[key].name%><i class="material-icons right">close</i></span>
-      <p><%=$muffin_hash[key].description%></p>
+      <span class="card-title grey-text text-darken-4"><%=@muffin_hash[key].name%><i class="material-icons right">close</i></span>
+      <p><%=@muffin_hash[key].description%></p>
     </div>
   </div>
   <% end %>

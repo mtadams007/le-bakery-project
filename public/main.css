@@ -9,14 +9,8 @@ a {
 h2 {
   color: #20A39E;
 }
-body {
-  font-family: 'Gloria Hallelujah';
-}
 
-.card-pic {
-  height: 250px;
-  width: auto;
-}
+
 #sign-greeting {
   position: absolute;
   margin-top: 190px;
@@ -43,6 +37,7 @@ h2 {
 }
 
 body {
+  font-family: 'Gloria Hallelujah';
   display: flex;
   min-height: 100vh;
   flex-direction: column;
